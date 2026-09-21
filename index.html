@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Margarita | Belleza a Domicilio</title>
+  <meta name="description" content="Servicios de belleza profesional en la comodidad de tu hogar. Agenda tu cita hoy.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container nav-content">
+      <a href="#" class="logo">Lumina <span>Belleza</span></a>
+      
+      <button class="menu-toggle" aria-label="Menú" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#citas">Agendar</a></li>
+        <li><a href="#citas" class="nav-cta">Reservar cita</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text reveal reveal-left">
+        <h1>Belleza profesional<br>en la <span>comodidad</span><br>de tu hogar</h1>
+        <p>Relájate y déjate consentir. Llevamos el salón hasta ti con productos de calidad y atención personalizada.</p>
+        <div class="hero-buttons">
+          <a href="#citas" class="btn btn-primary">Agendar cita</a>
+          <!-- ⚠️ CAMBIA EL NÚMERO DE WHATSAPP AQUÍ (después de wa.me/) -->
+          <a href="https://wa.me/50237931301?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20de%20belleza%20a%20domicilio" 
+             class="btn btn-outline" target="_blank" rel="noopener">
+            WhatsApp
+          </a>
+        </div>
+      </div>
+      <div class="hero-image reveal reveal-right">
+        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&q=80" 
+             alt="Servicio de belleza profesional" 
+             loading="eager">
+        <div class="hero-badge">
+          <strong>+500 clientas felices</strong>
+          <span>Atención personalizada</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="servicios">
+    <div class="container">
+      <div class="section-header reveal reveal-up">
+        <h2>Nuestros servicios</h2>
+        <p>Tratamientos pensados para realzar tu belleza natural, sin salir de casa.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal reveal-left delay-1">
+          <img class="card-img" src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=500&q=80" alt="Manicure">
+          <div class="card-body">
+            <h3>Manicure & Pedicure</h3>
+            <p>Cuidado completo de uñas con esmalte semipermanente y diseños personalizados.</p>
+          </div>
+        </div>
+        <div class="service-card reveal reveal-up delay-2">
+          <img class="card-img" src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=500&q=80" alt="Maquillaje">
+          <div class="card-body">
+            <h3>Maquillaje</h3>
+            <p>Maquillaje profesional para eventos, sesiones fotográficas o el día a día.</p>
+          </div>
+        </div>
+        <div class="service-card reveal reveal-up delay-3">
+          <img class="card-img" src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=500&q=80" alt="Facial">
+          <div class="card-body">
+            <h3>Faciales</h3>
+            <p>Limpieza profunda, hidratación y tratamientos anti-edad adaptados a tu piel.</p>
+          </div>
+        </div>
+        <div class="service-card reveal reveal-right delay-4">
+          <img class="card-img" src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?w=500&q=80" alt="Peinado">
+          <div class="card-body">
+            <h3>Peinado & Brushing</h3>
+            <p>Peinados elegantes, recogidos y brushing para que te sientas radiante.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section gallery" id="galeria">
+    <div class="container">
+      <div class="section-header reveal reveal-up">
+        <h2>Galería de trabajos</h2>
+        <p>Algunos de nuestros resultados. Cada detalle hecho con cariño.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item g-1 reveal reveal-left delay-1">
+          <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=700&q=80" alt="Maquillaje profesional">
+          <div class="overlay"><span>Maquillaje de noche</span></div>
+        </div>
+        <div class="gallery-item g-2 reveal reveal-up delay-2">
+          <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=600&q=80" alt="Manicure">
+          <div class="overlay"><span>Diseño de uñas</span></div>
+        </div>
+        <div class="gallery-item g-3 reveal reveal-right delay-3">
+          <img src="https://images.unsplash.com/photo-1596704017254-9b121068fb31?w=500&q=80" alt="Cuidado de piel">
+          <div class="overlay"><span>Tratamiento facial</span></div>
+        </div>
+        <div class="gallery-item g-4 reveal reveal-left delay-2">
+          <img src="https://images.unsplash.com/photo-1522336284037-91f7da073525?w=600&q=80" alt="Peinado">
+          <div class="overlay"><span>Peinado elegante</span></div>
+        </div>
+        <div class="gallery-item g-5 reveal reveal-up delay-3">
+          <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=600&q=80" alt="Maquillaje natural">
+          <div class="overlay"><span>Look natural</span></div>
+        </div>
+        <div class="gallery-item g-6 reveal reveal-right delay-4">
+          <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=600&q=80" alt="Pedicure">
+          <div class="overlay"><span>Pedicure spa</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="section why-us" id="nosotros">
+    <div class="container">
+      <div class="section-header reveal reveal-up">
+        <h2>¿Por qué elegirnos?</h2>
+        <p>La experiencia de un salón profesional, sin las complicaciones de salir de casa.</p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-item reveal reveal-left delay-1">
+          <div class="why-number">01</div>
+          <div>
+            <h3>Comodidad total</h3>
+            <p>Nos desplazamos a tu domicilio. Tú solo preparas tu espacio favorito y disfrutas.</p>
+          </div>
+        </div>
+        <div class="why-item reveal reveal-up delay-2">
+          <div class="why-number">02</div>
+          <div>
+            <h3>Productos premium</h3>
+            <p>Utilizamos marcas profesionales y productos de alta calidad para cada tratamiento.</p>
+          </div>
+        </div>
+        <div class="why-item reveal reveal-right delay-3">
+          <div class="why-number">03</div>
+          <div>
+            <h3>Atención personalizada</h3>
+            <p>Cada sesión se adapta a tus gustos, tipo de piel y el resultado que deseas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING / CONTACT -->
+  <section class="section booking" id="citas">
+    <div class="container">
+      <div class="booking-wrapper">
+        
+        <!-- Left info -->
+        <div class="booking-info reveal reveal-left">
+          <h2>Agenda tu cita</h2>
+          <p>Elige la forma que más te convenga. Respondemos rápido y con mucho gusto.</p>
+
+          <div class="contact-options">
+            <!-- ⚠️ CAMBIA EL NÚMERO DE WHATSAPP AQUÍ (después de wa.me/) -->
+            <a href="https://wa.me/50237931301?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20de%20belleza%20a%20domicilio" 
+               class="contact-option" target="_blank" rel="noopener">
+              <div class="icon">💬</div>
+              <div>
+                <strong>WhatsApp</strong>
+                <span>Respuesta inmediata</span>
+              </div>
+            </a>
+
+            <!-- ⚠️ CAMBIA EL CORREO AQUÍ (después de mailto:) -->
+            <a href="mailto:cristofer.andredeleon@gmail.com?subject=Consulta%20Belleza%20a%20Domicilio" 
+               class="contact-option">
+              <div class="icon">✉️</div>
+              <div>
+                <strong>Correo electrónico</strong>
+                <!-- ⚠️ CAMBIA TAMBIÉN EL TEXTO QUE SE MUESTRA -->
+                <span>cristofer.andredeleon@gmail.com</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="form-card reveal reveal-right">
+          <h3>Solicitar cita</h3>
+          <p>Completa el formulario y te contactamos para confirmar.</p>
+
+          <form id="citaForm" onsubmit="return handleSubmit(event)">
+            <div class="form-group">
+              <label for="nombre">Nombre completo</label>
+              <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="telefono">Teléfono / WhatsApp</label>
+                <input type="tel" id="telefono" name="telefono" required placeholder="55 1234 5678">
+              </div>
+              <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required placeholder="tu@email.com">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="servicio">Servicio deseado</label>
+              <select id="servicio" name="servicio" required>
+                <option value="" disabled selected>Selecciona un servicio</option>
+                <option value="Manicure & Pedicure">Manicure & Pedicure</option>
+                <option value="Maquillaje">Maquillaje</option>
+                <option value="Facial">Facial</option>
+                <option value="Peinado & Brushing">Peinado & Brushing</option>
+                <option value="Otro / Combinado">Otro / Combinado</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fecha">Fecha preferida</label>
+                <input type="date" id="fecha" name="fecha" required>
+              </div>
+              <div class="form-group">
+                <label for="hora">Hora preferida</label>
+                <input type="time" id="hora" name="hora" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="notas">Notas adicionales (opcional)</label>
+              <textarea id="notas" name="notas" placeholder="Dirección, preferencias, alergias..."></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-whatsapp" name="action" value="whatsapp">
+                Enviar por WhatsApp
+              </button>
+              <button type="button" class="btn btn-email" onclick="sendByEmail()">
+                Enviar por correo
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <a href="#" class="logo">Margarita<span style="color:#C9A89A">Belleza</span></a>
+      <p>Belleza profesional a domicilio · Con cariño y dedicación</p>
+      
+      <div class="footer-links">
+        <a href="#servicios">Servicios</a>
+        <a href="#galeria">Galería</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#citas">Agendar cita</a>
+        <!-- ⚠️ CAMBIA EL NÚMERO DE WHATSAPP AQUÍ -->
+        <a href="https://wa.me/50237931301" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+
+      <div class="copyright">
+        © 2026 Margarita Belleza. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <!-- ⚠️ CAMBIA EL NÚMERO DE WHATSAPP AQUÍ (después de wa.me/) -->
+  <a href="https://wa.me/50237931301?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20de%20belleza%20a%20domicilio" 
+     class="float-whatsapp" 
+     target="_blank" 
+     rel="noopener"
+     aria-label="Contactar por WhatsApp">
+    💬
+  </a>
+
+  <!-- JavaScript externo -->
+  <script src="script.js"></script>
+</body>
+</html>
